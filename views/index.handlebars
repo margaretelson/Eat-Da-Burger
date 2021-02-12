@@ -1,7 +1,38 @@
-<h2>
-	{{name}}
+<h1>Eat Da Burger!</h1>
 
-	<button class="change-burger" data-id="{{id}}" data-burger="{{hungry}}">
-		Devour it!
-	</button>
-</h2>
+<h2>Your Burger Orders!</h2>
+
+<ul>
+  {{#each burgers}}
+  {{#unless hungry}}
+  {{> burgers/burger-block hungry=true}}
+  {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Takeout for later!</h2>
+
+<ul>
+  {{#each burgers}}
+  {{#if hungry}}
+  {{> burgers/burger-block hungry=false}}
+  {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger Order</h2>
+<form id="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Type:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="hungry">Hungry Now?</label><br>
+    <input type="radio" name="hungry" value="1" id="hungry" checked> Hungry!<br>
+    <input type="radio" name="hungry" value="0" id="full"> Full
+  </div>
+
+  <button type="submit">Add your Burger</button>
+</form>

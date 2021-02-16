@@ -1,31 +1,38 @@
 <h1>Eat Da Burger!</h1>
 
-<h2>Your Burger Orders!</h2>
+<img src="https://media2.giphy.com/media/i4bWPx9KZWeMph3ZLv/source.gif">
+
+<div class="BurgOrders">
+<h2 id="burgNow">Your Burger Orders!</h2>
 
 <ul>
   {{#each burgers}}
   {{#unless hungry}}
-  {{> burgers/burger-block hungry=true}}
+  {{> burger-block hungry=true}}
   {{/unless}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Takeout for later!</h2>
+<div class="Takeout">
+<h2 id="burgLater">Takeout for later!</h2>
 
 <ul>
   {{#each burgers}}
   {{#if hungry}}
-  {{> burgers/burger-block hungry=false}}
+  {{> burger-block hungry=false}}
   {{/if}}
   {{/each}}
 </ul>
+</div>
 
-<h2>Add a Burger Order</h2>
+<div class="newOrder">
+<h3>Add a Burger Order</h3>
 <form id="create-form">
 
   <div class="form-group">
-    <label for="ca">Burger Type:</label>
-    <input type="text" id="ca" name="name">
+    <label for="burger_name">Burger Type:</label>
+    <input type="text" id="burger_name" name="burger_name">
   </div>
 
   <div class="form-group">
@@ -36,3 +43,5 @@
 
   <button type="submit">Add your Burger</button>
 </form>
+
+</div>

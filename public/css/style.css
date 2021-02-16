@@ -1,0 +1,71 @@
+*{
+  font-family: monospace;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: transparent;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+
+  body {
+    background-color: lightcoral;
+  }
+
+  h1{
+    margin-left: 40%;
+    align-items: center;
+    position: absolute;  
+  }
+
+  img{
+    margin-left: 42%;
+    position: fixed; 
+    width: 150px;
+    height: 150px;
+    margin-top: 4.5%;
+  }
+
+  .newOrder{
+    margin-left: 40%;
+    align-items: center;
+    position: absolute;
+  }
+
+  h2{
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .BurgOrders{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 28%;
+    margin-top: 14%;
+    margin-right: 100px;
+  }
+
+  .Takeout{
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  button{
+    border-radius: 8px;
+    background-color: rgb(252, 252, 157);
+  }
+  

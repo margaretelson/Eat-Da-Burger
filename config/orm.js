@@ -74,6 +74,7 @@ const printQuestionMarks = (num) => {
         cb(result);
       });
     },
+    
     delete(table, condition, cb) {
       let queryString = `DELETE FROM ${table}`;
       queryString += ' WHERE ';

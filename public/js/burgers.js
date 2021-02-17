@@ -3,11 +3,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
       console.info('DOM loaded');
     }
   
-    const changeHungryBtns = document.querySelectorAll('.change-sleep');
+    const changeHungryBtns = document.querySelectorAll('.change-hungry');
   
     if (changeHungryBtns) {
       changeHungryBtns.forEach((button) => {
         button.addEventListener('click', (e) => {
+          console.log("hi")
           const id = e.target.getAttribute('data-id');
           const newHungry = e.target.getAttribute('data-newhungry');
   
@@ -63,12 +64,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
       });
     }
   
-    const deleteBurgerBtns = document.querySelectorAll('.delete-burger');
+    const deleteBurgerBtns = document.querySelectorAll('.delete');
   
     deleteBurgerBtns.forEach((button) => {
+      console.log("hello?")
       button.addEventListener('click', (e) => {
         const id = e.target.getAttribute('data-id');
-  
+        console.log(e.target)
         fetch(`/api/burgers/${id}`, {
           method: 'DELETE',
         }).then((res) => {

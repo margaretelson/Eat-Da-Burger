@@ -54,9 +54,9 @@ li {
   .BurgOrders{
     list-style-type: none;
     display: inline-block;
-    margin-left: 28%;
+    margin-left: 25%;
     margin-top: 14%;
-    margin-right: 100px;
+    margin-right: 200px;
   }
 
   .Takeout{

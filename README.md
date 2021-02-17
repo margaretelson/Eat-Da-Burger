@@ -17,7 +17,7 @@ The 'Eat Da Burger' wesbsite is an open source for users to quickly and easily a
 ## URL
 [Click here to see the live website!]()
 
-![Screenshot Deployed Website](./dist/livehtml.png)
+![Screenshot Deployed Website](screenshot.png)
 
 ## Installation
 npm i, npm i inquirer, npm i express, npm i express-handlebars, npm init
